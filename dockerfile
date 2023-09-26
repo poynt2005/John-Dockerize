@@ -26,7 +26,7 @@ ENV TZ=Asia/Taipei
 ENV HOME=/config
 ENV USER_ID=0
 ENV GROUP_ID=0
-ENV KEEP_APP_RUNNING
+ENV KEEP_APP_RUNNING=1
 
 RUN apk add  --no-cache libgomp qt5-qtbase-x11 msttcorefonts-installer fontconfig
 RUN update-ms-fonts && fc-cache -f
