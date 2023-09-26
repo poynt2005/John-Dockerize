@@ -1,0 +1,9 @@
+docker run \
+    --rm \
+    -p <Your_noVNC_port>:5800 \
+    -p <Your_VNC_port>:5900 \
+    -v </path/to/your/data>:/config/data \
+    -v </path/to/your/config>:/config/.john \
+    -v </path/to/your/x11/config>:/config \
+    -d \
+    poynt2005/john-gui
